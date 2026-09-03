@@ -33,8 +33,6 @@ const area: PracticeArea = {
     "Risk management",
     "Commercial advice",
   ],
-  secondaryImage: "/images/practice/commercial-secondary.jpg",
-  secondaryAlt: "Solari & Stock commercial services",
 };
 
 export default function CommercialLawPage() {

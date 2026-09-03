@@ -25,6 +25,7 @@ export default function TheTeamPage() {
         eyebrow="Our People"
         title="Meet the Team"
         intro="Need advice you can rely on? Book your consultation with us here."
+        ctaLabel="Book your free 30 minute consultation"
       />
       <section className="container-page py-16 md:py-20">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

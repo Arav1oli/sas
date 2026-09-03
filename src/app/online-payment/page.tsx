@@ -25,7 +25,7 @@ export default function OnlinePaymentPage() {
           { name: "Online Payment", path: "/online-payment" },
         ])}
       />
-      <PageHero eyebrow="Accounts" title="Online Payment" />
+      <PageHero eyebrow="Accounts" title="Online Payment" showTrustLine={false} />
       <section className="container-page max-w-xl py-16 md:py-20">
         <p className="mb-6 text-ink-soft">
           Pay your invoice with ease using our secure online form and your

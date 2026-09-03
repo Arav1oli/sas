@@ -30,6 +30,7 @@ export default function OtherLegalAreasPage() {
         eyebrow="Other Legal Areas"
         title="Other Legal Areas"
         intro="Need advice you can rely on? Book your consultation with us here."
+        ctaLabel="Book your free 30 minute consultation"
       />
       <section className="container-page max-w-3xl py-16 md:py-20">
         <p className="mb-4 text-ink-soft leading-relaxed">

@@ -17,7 +17,7 @@ export default function PositionsVacantPage() {
           { name: "Positions Vacant", path: "/positions-vacant" },
         ])}
       />
-      <PageHero eyebrow="Careers" title="Positions Vacant" />
+      <PageHero eyebrow="Careers" title="Positions Vacant" showTrustLine={false} />
       <section className="container-page max-w-2xl py-16 md:py-20">
         <p className="text-ink-soft">
           There are no positions available at the moment. Please check back

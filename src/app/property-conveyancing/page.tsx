@@ -32,8 +32,6 @@ const area: PracticeArea = {
     "Stamp duty",
     "Mortgages (refinances and discharges)",
   ],
-  secondaryImage: "/images/practice/property-secondary.jpg",
-  secondaryAlt: "Property conveyancing documents",
 };
 
 export default function PropertyConveyancingPage() {

@@ -53,18 +53,18 @@ export default function HomePage() {
       <JsonLd data={breadcrumbSchema([{ name: "Home", path: "/" }])} />
 
       <section className="border-b border-line bg-paper-tint">
-        <div className="container-page grid grid-cols-1 items-center gap-10 py-16 md:grid-cols-2 md:py-24">
+        <div className="container-page grid grid-cols-1 items-center gap-8 py-10 md:grid-cols-2 md:py-14">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.14em] text-accent-deep">
               Miranda &amp; Sutherland Shire
             </p>
             <h1 className="mt-3 text-4xl md:text-5xl">In Your Best Interests</h1>
-            <p className="mt-5 max-w-lg text-lg text-ink-soft">
+            <p className="mt-4 max-w-lg text-lg text-ink-soft">
               Sutherland Shire&rsquo;s boutique law firm — Accredited
               Specialists in Family Law, STEP-accredited Estate Planning, and
               strategic Commercial advice.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 href="/contact"
                 className="rounded-sm bg-accent-deep px-6 py-3 text-sm font-medium text-white hover:bg-ink"
@@ -78,13 +78,16 @@ export default function HomePage() {
                 Start online now
               </a>
             </div>
+            <p className="mt-5 text-xs font-medium uppercase tracking-wide text-ink-faint">
+              3&times; Accredited Specialists &middot; STEP Accredited &middot; Since 1987 &middot; 4.6&#9733; Google Rating
+            </p>
           </div>
-          <div className="relative aspect-square w-full overflow-hidden rounded-sm bg-paper">
+          <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-sm bg-paper">
             <Image
               src="/images/brand/directors-composite.png"
               alt="Solari and Stock Lawyers directors"
               fill
-              sizes="(min-width: 768px) 45vw, 90vw"
+              sizes="440px"
               className="object-contain"
               priority
             />

@@ -51,7 +51,7 @@ export default function UsefulLinksPage() {
           { name: "Useful Links", path: "/useful-links" },
         ])}
       />
-      <PageHero eyebrow="Resources" title="Useful Links" />
+      <PageHero eyebrow="Resources" title="Useful Links" showTrustLine={false} />
       <section className="container-page max-w-3xl py-16 md:py-20">
         {LINK_GROUPS.map((g) => (
           <div key={g.heading} className="mb-10">
