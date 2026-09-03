@@ -33,7 +33,7 @@ export const TEAM: TeamMember[] = [
   {
     slug: "riccarda-stock",
     name: "Riccarda Stock",
-    role: "Director / Family Law Specialist",
+    role: "Director, Family Law | Law Society Accredited Specialist",
     image: "/images/team/riccarda-stock.jpg",
     bio: [
       { type: "para", text: `I am a Director of the firm, and a Law Society Accredited Specialist in Family Law and a qualified Family Law Collaborative Lawyer. I head the Family Law team of experienced and passionate Family Lawyers at Solari and Stock.` },
