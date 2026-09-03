@@ -17,8 +17,8 @@ const area: PracticeArea = {
   eyebrow: "Family Law",
   title: "Family Law",
   intro: "Book your free 30 minute family law consultation here.",
-  heroImage: "/images/practice/family-law-hero.jpg",
-  heroAlt: "Solari & Stock family law consultation",
+  heroImage: "/images/team/riccarda-stock.jpg",
+  heroAlt: "Riccarda Stock, Director, Family Law | Law Society Accredited Specialist",
   bookHref: "/contact",
   lead: [
     "Solari & Stock are based in Miranda and have over 30 years of experience in the St George-Sutherland area. We know family law disputes are an exhausting process. Our clients benefit from our professional and compassionate approach.",
