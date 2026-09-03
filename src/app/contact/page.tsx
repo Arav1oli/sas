@@ -36,6 +36,9 @@ export default function ContactPage() {
             Book your first free 30 minute in-office consultation, or send us
             a message below and we&rsquo;ll get back to you.
           </p>
+          <p className="mt-4 text-sm font-medium text-ink-soft">
+            4.6★ Google Rating from 22 reviews
+          </p>
         </div>
       </section>
 

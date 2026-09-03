@@ -38,6 +38,7 @@ export const PRIMARY_NAV: PrimaryNavItem[] = [
   { label: "Wills & Estates", href: "/will-estates" },
   { label: "Other Legal Areas", href: "/other-legal-areas" },
   { label: "The Team", href: "/the-team" },
+  { label: "About Us", href: "/about-us" },
   { label: "FAQs", href: "/faqs" },
   { label: "Contact", href: "/contact" },
 ];

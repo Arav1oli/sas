@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PracticeAreaTemplate, { type PracticeArea } from "@/components/PracticeAreaTemplate";
+import CredentialsBar from "@/components/CredentialsBar";
 import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { SETTIFY } from "@/lib/site";
 
@@ -20,7 +21,7 @@ const area: PracticeArea = {
   lead: [
     "Solari & Stock are based in Miranda and have over 30 years of experience in the St George-Sutherland area. We know family law disputes are an exhausting process. Our clients benefit from our professional and compassionate approach.",
     "We offer sincere and quality family law advice, developing a suitable approach and resolution. We successfully work out arrangements, in or out of Court, always advocating your best interests. Our committed and experienced lawyers have a very high success rate in this area.",
-    "Riccarda Stock, backed by a team of four lawyers, is an Accredited Specialist in Family Law and heads the collaboratively trained, Family Law Team.",
+    "Our Family Law team includes three Law Society Accredited Specialists in Family Law — Riccarda Stock, Nikita Ward and Nicole Quirk. This is an advanced qualification held by fewer than 6% of practising family lawyers in NSW.",
   ],
   services: [
     "Divorce and separation",
@@ -63,6 +64,30 @@ export default function FamilyLawPage() {
         ]}
       />
       <PracticeAreaTemplate area={area} />
+      <CredentialsBar />
+
+      <section className="border-t border-line bg-paper-tint">
+        <div className="container-page max-w-2xl py-16 md:py-20">
+          <h2 className="text-2xl">Trauma-aware family law</h2>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            We understand that many family law matters involve domestic
+            violence and coercive control. Our team combines Accredited
+            Specialist credentials with a genuine, firm-wide commitment to
+            DV awareness and mental health-informed practice, so you are
+            heard and supported at every stage.
+          </p>
+          <p className="mt-4 text-sm text-ink-faint">
+            All enquiries of this nature are treated in strict confidence.
+          </p>
+          <a
+            href="/contact"
+            className="mt-6 inline-block rounded-sm bg-accent-deep px-6 py-3 text-sm font-medium text-white hover:bg-ink"
+          >
+            Book your free 30 minute consultation
+          </a>
+        </div>
+      </section>
+
       <section className="container-page py-14">
         <a
           href={SETTIFY.familyLaw}

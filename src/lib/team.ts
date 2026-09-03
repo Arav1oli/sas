@@ -65,7 +65,7 @@ export const TEAM: TeamMember[] = [
   {
     slug: "nicole-quirk",
     name: "Nicole Quirk",
-    role: "Special Counsel / Family Law Specialist",
+    role: "Special Counsel, Family Law | Law Society Accredited Specialist",
     image: "/images/team/nicole-quirk.jpg",
     bio: [
       { type: "para", text: `I have a number of connections with other professionals such as Valuers, Accountants, Financial Advisers, Mediators, Therapists, and Psychologists who can assist parties in resolving disputes.` },
@@ -95,7 +95,7 @@ export const TEAM: TeamMember[] = [
   {
     slug: "nikita-ward",
     name: "Nikita Ward",
-    role: "Senior Associate / Family Law Specialist",
+    role: "Solicitor, Family Law | Law Society Accredited Specialist",
     image: "/images/team/nikita-ward.jpg",
     bio: [
       { type: "para", text: `For as long as I can remember, I have always had a strong interest in justice, fairness and otherwise had a passion for advocating for those who might otherwise be disadvantaged. Being the elder twins, of which my sibling lives with a disability, cerebral palsy, I have always stuck up for the ‘underdog’.` },
@@ -196,9 +196,10 @@ export const TEAM: TeamMember[] = [
   {
     slug: "vicki-de-bonis",
     name: "Vicki De Bonis",
-    role: "Licensed Conveyancer / Property & Conveyancing",
+    role: "Licensed Conveyancer, Property & Conveyancing | 40 Years' Experience",
     image: "/images/team/vicki-de-bonis.jpg",
     bio: [
+      { type: "para", text: `With over 40 years' experience in the legal industry, I bring a depth of practical knowledge to every property transaction I handle.` },
       { type: "para", text: `I commenced my career as a paralegal secretary, assisting partners in private legal practices to achieve satisfactory outcomes for clients across various areas of law, with a particular focus on property and commercial matters. I pride myself on being a hardworking and highly committed employee, always eager to contribute to business development, and I find great personal satisfaction in achieving both client and corporate goals.` },
       { type: "para", text: `In 2007, I completed a Certificate in Property Law & Practice at Macquarie University to further enhance my qualifications and assist legal practices in providing advice to clients.` },
       { type: "para", text: `I joined Solari & Stock in 2013, where I developed a passion for helping clients with their property transactions. Whether working with first home buyers, assisting families in updating their homes, navigating commercial property transactions, building property investment portfolios, or dealing with deceased estate properties and transfers due to family breakdowns, I strive to make the process as smooth as possible.` },

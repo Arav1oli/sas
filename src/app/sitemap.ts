@@ -10,6 +10,7 @@ const STATIC_PATHS = [
   "/will-estates",
   "/other-legal-areas",
   "/our-services",
+  "/about-us",
   "/the-team",
   "/faqs",
   "/contact",

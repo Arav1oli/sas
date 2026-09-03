@@ -2,8 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import CTABand from "@/components/CTABand";
+import CredentialsBar from "@/components/CredentialsBar";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { SETTIFY } from "@/lib/site";
+
+// Tagline is the brand report's own top-ranked recommendation ("In Your
+// Best Interests") — Directors should confirm the final choice (see the
+// shortlist in the report, Section 3.1.1) before this is treated as locked.
 
 export const metadata: Metadata = {
   title: "Sutherland Shire Lawyers - Family, Property, Wills & More",
@@ -53,13 +58,11 @@ export default function HomePage() {
             <p className="text-xs font-medium uppercase tracking-[0.14em] text-accent-deep">
               Miranda &amp; Sutherland Shire
             </p>
-            <h1 className="mt-3 text-4xl md:text-5xl">
-              Comprehensive legal services, where clients come first
-            </h1>
+            <h1 className="mt-3 text-4xl md:text-5xl">In Your Best Interests</h1>
             <p className="mt-5 max-w-lg text-lg text-ink-soft">
-              Solari &amp; Stock Lawyers is located at Miranda in Sydney&rsquo;s
-              Sutherland Shire. Our dedicated teams specialise in Family Law,
-              Wills and Estates, Commercial Law and Leasing, and Conveyancing.
+              Sutherland Shire&rsquo;s boutique law firm — Accredited
+              Specialists in Family Law, STEP-accredited Estate Planning, and
+              strategic Commercial advice.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -88,6 +91,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <CredentialsBar />
 
       <section className="container-page py-16 md:py-20">
         <h2 className="text-3xl">Comprehensive legal services</h2>

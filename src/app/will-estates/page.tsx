@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PracticeAreaTemplate, { type PracticeArea } from "@/components/PracticeAreaTemplate";
+import CredentialsBar from "@/components/CredentialsBar";
 import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -62,6 +64,33 @@ export default function WillsEstatesPage() {
         ]}
       />
       <PracticeAreaTemplate area={area} />
+      <CredentialsBar />
+
+      <section className="border-t border-line bg-paper-tint">
+        <div className="container-page max-w-2xl py-16 md:py-20">
+          <p className="text-xs font-medium uppercase tracking-[0.14em] text-accent-deep">
+            STEP Accredited
+          </p>
+          <h2 className="mt-3 text-2xl">
+            Led by the Shire&rsquo;s only STEP-accredited solicitor
+          </h2>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Our Wills &amp; Estates practice is led by a STEP-accredited
+            solicitor — the internationally recognised specialist
+            qualification for estate planning professionals from the
+            Society of Trust and Estate Practitioners.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            <Link href="/team/rebecca-exley" className="text-accent-deep hover:underline">
+              Rebecca Exley TEP
+            </Link>{" "}
+            leads our estate planning work — Director, Master of Applied
+            Laws, and STEP accredited (2023). Her estate planning work has
+            been featured in The Australian Financial Review and the Daily
+            Telegraph.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
