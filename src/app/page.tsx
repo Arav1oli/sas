@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import CTABand from "@/components/CTABand";
 import CredentialsBar from "@/components/CredentialsBar";
+import Reveal from "@/components/Reveal";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { SETTIFY } from "@/lib/site";
 
@@ -105,21 +106,23 @@ export default function HomePage() {
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {PRACTICE_SUMMARY.map((p) => (
-            <div key={p.title} className="rounded-sm border border-line p-6">
-              <h3 className="text-xl">{p.title}</h3>
-              <p className="mt-2 text-sm text-ink-soft">{p.body}</p>
-              <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
-                <Link href={p.href} className="text-accent-deep hover:underline">
-                  Learn more
-                </Link>
-                {p.settify && (
-                  <a href={p.settify} className="text-accent-deep hover:underline">
-                    Start online now
-                  </a>
-                )}
+          {PRACTICE_SUMMARY.map((p, i) => (
+            <Reveal key={p.title} delayMs={i * 80}>
+              <div className="h-full rounded-sm border border-line p-6 transition-shadow duration-300 hover:shadow-md">
+                <h3 className="text-xl">{p.title}</h3>
+                <p className="mt-2 text-sm text-ink-soft">{p.body}</p>
+                <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                  <Link href={p.href} className="text-accent-deep hover:underline">
+                    Learn more
+                  </Link>
+                  {p.settify && (
+                    <a href={p.settify} className="text-accent-deep hover:underline">
+                      Start online now
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -127,15 +130,17 @@ export default function HomePage() {
       <section className="border-t border-line bg-paper-tint">
         <div className="container-page py-16 md:py-20">
           <h2 className="text-3xl">What our clients say</h2>
-          <blockquote className="mt-6 max-w-2xl border-l-2 border-accent pl-6 text-lg italic text-ink-soft">
-            &ldquo;I want to thank Solari &amp; Stock for helping me navigate one
-            of the most difficult stages of my life. Your care, understanding
-            and most of all, guidance in challenging times will never be
-            forgotten.&rdquo;
-            <footer className="mt-3 text-sm not-italic text-ink-faint">
-              &ndash; Rodney
-            </footer>
-          </blockquote>
+          <Reveal>
+            <blockquote className="mt-6 max-w-2xl border-l-2 border-accent pl-6 text-lg italic text-ink-soft">
+              &ldquo;I want to thank Solari &amp; Stock for helping me navigate one
+              of the most difficult stages of my life. Your care, understanding
+              and most of all, guidance in challenging times will never be
+              forgotten.&rdquo;
+              <footer className="mt-3 text-sm not-italic text-ink-faint">
+                &ndash; Rodney
+              </footer>
+            </blockquote>
+          </Reveal>
         </div>
       </section>
 

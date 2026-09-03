@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import PracticeAreaTemplate, { type PracticeArea } from "@/components/PracticeAreaTemplate";
 import CredentialsBar from "@/components/CredentialsBar";
+import Reveal from "@/components/Reveal";
 import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { SETTIFY } from "@/lib/site";
 
@@ -22,7 +23,7 @@ const area: PracticeArea = {
   lead: [
     "Solari & Stock are based in Miranda and have over 30 years of experience in the St George-Sutherland area. We know family law disputes are an exhausting process. Our clients benefit from our professional and compassionate approach.",
     "We offer sincere and quality family law advice, developing a suitable approach and resolution. We successfully work out arrangements, in or out of Court, always advocating your best interests. Our committed and experienced lawyers have a very high success rate in this area.",
-    "Our Family Law team includes three Law Society Accredited Specialists in Family Law — Riccarda Stock, Nikita Ward and Nicole Quirk. This is an advanced qualification held by fewer than 6% of practising family lawyers in NSW.",
+    "Our Family Law team includes three Law Society Accredited Specialists in Family Law — Riccarda Stock, Nikita Ward and Nicole Quirk — the most highly accredited Family Law team of any firm in the St George & Sutherland Shire area. This is an advanced qualification held by fewer than 6% of practising family lawyers in NSW, and no other local firm holds more than two.",
   ],
   services: [
     "Divorce and separation",
@@ -68,19 +69,21 @@ export default function FamilyLawPage() {
 
       <section className="border-t border-line bg-paper py-14 md:py-16">
         <div className="container-page">
-          <p className="text-xs font-medium uppercase tracking-[0.14em] text-accent-deep">
-            Meet the team
-          </p>
-          <h2 className="mt-2 text-2xl">Your Family Law team</h2>
-          <div className="relative mt-6 aspect-[2048/1064] w-full max-w-4xl">
-            <Image
-              src="/images/practice/family-law-team.png"
-              alt="The Solari & Stock Family Law team"
-              fill
-              sizes="(min-width: 1024px) 900px, 100vw"
-              className="object-contain object-left"
-            />
-          </div>
+          <Reveal>
+            <p className="text-xs font-medium uppercase tracking-[0.14em] text-accent-deep">
+              Meet the team
+            </p>
+            <h2 className="mt-2 text-2xl">Your Family Law team</h2>
+            <div className="relative mt-6 aspect-[2048/1064] w-full max-w-4xl">
+              <Image
+                src="/images/practice/family-law-team.png"
+                alt="The Solari & Stock Family Law team"
+                fill
+                sizes="(min-width: 1024px) 900px, 100vw"
+                className="object-contain object-left"
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 
