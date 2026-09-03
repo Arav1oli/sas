@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PracticeAreaTemplate, { type PracticeArea } from "@/components/PracticeAreaTemplate";
 import CredentialsBar from "@/components/CredentialsBar";
 import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/schema";
@@ -64,6 +65,25 @@ export default function FamilyLawPage() {
         ]}
       />
       <PracticeAreaTemplate area={area} />
+
+      <section className="border-t border-line bg-paper py-14 md:py-16">
+        <div className="container-page">
+          <p className="text-xs font-medium uppercase tracking-[0.14em] text-accent-deep">
+            Meet the team
+          </p>
+          <h2 className="mt-2 text-2xl">Your Family Law team</h2>
+          <div className="relative mt-6 aspect-[2048/1064] w-full max-w-4xl">
+            <Image
+              src="/images/practice/family-law-team.png"
+              alt="The Solari & Stock Family Law team"
+              fill
+              sizes="(min-width: 1024px) 900px, 100vw"
+              className="object-contain object-left"
+            />
+          </div>
+        </div>
+      </section>
+
       <CredentialsBar />
 
       <section className="border-t border-line bg-paper-tint">
